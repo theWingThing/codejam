@@ -1,7 +1,7 @@
 def main():
-  for t in range(int(input())):
-    N = int(input())
-    numbers = [int(x) for x in input().split()]
+  for t in xrange(int(raw_input())):
+    N = int(raw_input())
+    numbers = [int(x) for x in raw_input().split()]
 
     anyN = 0
     prev = numbers[0]
@@ -20,7 +20,7 @@ def main():
         total += maxN
       else:
         total += n
-    print("Case #{}: {}".format(t+1, str(anyN) + " " + str(total)))
+    print "Case #{}: {}".format(t+1, str(anyN) + " " + str(total))
 
 if __name__ == "__main__":
   main()
