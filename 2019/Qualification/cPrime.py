@@ -1,4 +1,4 @@
-primeFactors = []
+primeFactors = [5]
 
 def findFactor(n):
   for i in primeFactors:
@@ -7,7 +7,7 @@ def findFactor(n):
 
 def main():
   for t in xrange(int(raw_input())):
-    (N, L) = (int(x) for x in raw_input().split())]
+    (N, L) = (int(x) for x in raw_input().split())
     nums = [int(x) for x in raw_input().split()]
     smallest = min(nums)
     n = findFactor(smallest)
